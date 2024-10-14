@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crokette</title>
+    <link rel="icon" href="https://64.media.tumblr.com/9c165e254d44676efca60764fc5a151d/46bc1b5cf2913363-40/s540x810/f646474175a9e724b997f9518dbb7316407a5a07.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/vcr-osd-mono');
+
+        body {
+            font-family: 'VCR OSD Mono', monospace;
+            background: url('https://i.pinimg.com/originals/de/1a/0d/de1a0d60ba98d22aa76f07e781205e72.gif') no-repeat center center fixed; 
+            background-size: cover;
+            color: #e8f0dd;
+            margin: 0;
+            padding: 0;
+        }
+
+        .game-window {
+            border: 4px solid #1a4850;
+            width: 80%;
+            margin: 70px auto;
+            background-color: #647c67;
+            box-shadow: 5px 5px 15px #000;
+            overflow: auto;
+            max-height: 80vh;
+        }
+
+        .window-titlebar {
+            background-color: #e8f0dd;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            height: 100px;
+        }
+
+        .window-titlebar .title-image {
+            height: 100px;
+            width: auto;
+            margin-right: 20px;
+            transform: scale(1.2);
+            margin-left: 40px;
+        }
+
+        .window-titlebar .stickers {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+
+        .window-titlebar .stickers img {
+            width: 80px;
+            height: 80px;
+            margin: 0 5px;
+        }
+
+        .window-titlebar .buttons {
+            margin-left: auto;
+            margin-top: -40px;
+        }
+
+        .window-titlebar .buttons button {
+            border: none;
+            padding: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            color: #ffffff;
+        }
+
+        .window-titlebar .buttons .minimize {
+            background-color: #4caf50;
+        }
+
+        .window-titlebar .buttons .maximize {
+            background-color: #2196f3;
+        }
+
+        .window-titlebar .buttons .close {
+            background-color: #f44336;
+        }
+
+        .window-content {
+            padding: 20px;
+        }
+
+        .items-header {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 60px;
+            font-weight: bold;
+            color: #e8f0dd;
+            animation: wave 5s infinite linear;
+        }
+
+        .items-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px;
+        }
+
+        .item {
+            text-align: center;
+            padding: 10px;
+            background-color: #82a08d;
+            border: 2px solid #1a4850;
+            border-radius: 5px;
+            transition: transform 0.2s;
+        }
+
+        .item:hover {
+            transform: scale(1.05);
+        }
+
+        .item img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            image-rendering: pixelated;
+        }
+
+        .item p {
+            margin-top: 10px;
+        }
+
+        .window-footer {
+            background-color: #e8f0dd;
+            color: #1a4850;
+            text-align: center;
+            padding: 10px;
+        }
+
+       @keyframes wave {
+            50% {
+                transform: translateY(-10px);
+            }
+    
+        }
+    </style>
+</head>
+<body>
+    <div class="game-window">
+        <div class="window-titlebar">
+            <img src="CROKETTE sign.png" alt="crokette shop" class="title-image">
+            <div class="stickers">
+                <img src="https://i.gifer.com/5RT9.gif" alt="Sticker 1" class="pixel-art">
+                <img src="https://i.pinimg.com/originals/57/18/5d/57185d2176d7cbaebdb74c00ce1b9ebf.gif" alt="Sticker 2" class="pixel-art">
+            </div>
+    <script>
+        function navigateToStartup() {
+            window.location.href = "startup.html";
+        }
+
+        window.onload = function() {
+            document.querySelector('.minimize').addEventListener('click', function() {
+                navigateToStartup();
+            })
+
+            document.querySelector('.close').addEventListener('click', function() {
+                navigateToStartup();
+            })
+        }
+    </script>
+            <div class="buttons">
+                <button class="minimize">_</button>
+                <button class="maximize">[ ]</button>
+                <button class="close">X</button>
+            </div>
+        </div>
+
+        <div class="window-content">
+            <header>
+                <h1><i><span style="font-size: 60px;"> crokette </span></i></h1>
+                <p>the liminal space for comforting crochet</p>
+            </header>
+
+            <div class="items-header">
+                ╰┈┈ items to buy ┈┈╯
+            </div>
+
+            <section class="items-grid">
+                <div class="item">
+                    <a href="product_1.html"><img src="https://i.pinimg.com/564x/24/27/d6/2427d626aad6458b47e97062da2b1c12.jpg" alt="grassy greens" class="pixel-art"></a>
+                    <p>grassy greens</p>
+                </div>
+                <div class="item">
+                    <a href="product_2.html"><img src="https://i.pinimg.com/564x/d8/fb/de/d8fbde9fc2d5782b9ee438ae0123ae5e.jpg" alt="feelin' artsy holder" class="pixel-art"></a>
+                    <p>feelin' artsy holder</p>
+                </div>
+                <div class="item">
+                    <a href="product_3.html"><img src="https://i.pinimg.com/564x/be/c3/a8/bec3a8b4a800c4af846d0001704e4eec.jpg" alt="the frog and the swan" class="pixel-art"></a>
+                    <p>the frog and the swan</p>
+                </div>
+                <div class="item">
+                    <a href="product_4.html"><img src="https://i.pinimg.com/564x/6f/18/e0/6f18e06c521005b4a23eb4019d820fda.jpg" alt="earthy explorer" class="pixel-art"></a>
+                    <p>earthy explorer</p>
+                </div>
+                <div class="item">
+                    <a href="product_5.html"><img src="https://i.pinimg.com/736x/f1/8f/8c/f18f8ce103741a8b9fd8415f68cdf7cd.jpg" alt="princess and the poet" class="pixel-art"></a>
+                    <p>princess and the poet</p>
+                </div>
+                <div class="item">
+                    <a href="product_6.html"><img src="https://i.pinimg.com/564x/b1/84/1d/b1841d3ce195c4678f7bd40c6def6285.jpg" alt="gotta hop!" class="pixel-art"></a>
+                    <p>gotta hop!</p>
+                </div>
+                <div class="item">
+                    <a href="product_7.html"><img src="https://i.pinimg.com/564x/e5/a7/c7/e5a7c7355d50c831908b83bf7af7500a.jpg" alt="picking flowers" class="pixel-art"></a>
+                    <p>picking flowers</p>
+                </div>
+                <div class="item">
+                    <a href="product_8.html"><img src="https://i.pinimg.com/564x/d0/3a/16/d03a16cbc3b8e23a8e78e12858567779.jpg" alt="oh! it's sunny" class="pixel-art"></a>
+                    <p>oh! it's sunny</p>
+                </div>
+                <div class="item">
+                    <a href="product_9.html"><img src="https://i.pinimg.com/736x/94/24/6a/94246a2849d76459d6903109e6b2daff.jpg" alt="snow blue" class="pixel-art"></a>
+                    <p>snow blue</p>
+                </div>
+                <div class="item">
+                    <a href="product_10.html"><img src="https://i.pinimg.com/736x/17/57/c0/1757c023ad3d3477a89c3449bc3484bb.jpg" alt="patchworked" class="pixel-art"></a>
+                    <p>patchworked</p>
+                </div>
+            </section>
+        </div>
+
+        <div class="window-footer">
+            thank you for visiting <i><span style="color: #647c67; font-weight: bold;"> crokette!</span></i>
+        </div>
+    </div>
+</body>
+</html>

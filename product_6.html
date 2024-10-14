@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>‎</title>
+    <link rel="icon" href="https://64.media.tumblr.com/9c165e254d44676efca60764fc5a151d/46bc1b5cf2913363-40/s540x810/f646474175a9e724b997f9518dbb7316407a5a07.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/vcr-osd-mono');
+        
+        body {
+            font-family: 'VCR OSD Mono', monospace;
+            background: url(https://i.pinimg.com/originals/de/1a/0d/de1a0d60ba98d22aa76f07e781205e72.gif) no-repeat center center fixed; 
+            background-size: cover;
+            color: #f5f4d0; 
+            margin: 0;
+            padding: 0;
+        }
+
+        .game-window {
+            border: 4px solid #1a4850;
+            width: 60%;
+            margin: 30px auto;
+            background-color: #647c67;
+            box-shadow: 5px 5px 15px #000;
+            overflow: auto;
+            max-height: 90vh;
+        }
+
+        .window-titlebar {
+            background-color: #f5f4d0;
+            color: #3f7a3d; 
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            height: 100px;
+        }
+
+        .window-titlebar .title-image {
+            height: 100px; 
+            width: auto;
+            margin-right: 20px;
+            transform: scale(1.2);
+            margin-left: 40px;
+        }
+
+        .window-titlebar .buttons {
+            margin-left: auto;
+            margin-top: -40px;
+        }
+
+        .window-titlebar .buttons button {
+            border: none;
+            padding: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            color: #ffffff;
+        }
+
+        .window-titlebar .buttons .minimize {
+            background-color: #4caf50;
+        }
+
+        .window-titlebar .buttons .maximize {
+            background-color: #2196f3;
+        }
+
+        .window-titlebar .buttons .close {
+            background-color: #f44336;
+        }
+
+        .window-titlebar .buttons button:hover {
+            background-color: #a3cca1;
+        }
+
+        .window-content {
+            padding: 20px;
+            color: #f5f4d0; 
+            text-align: center;
+        }
+
+        h1 {
+            text-shadow: 2px 2px #333;
+        }
+
+        .product-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .product-image {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            image-rendering: pixelated;
+            border: 4px solid #1a4850;
+        }
+
+        .product-info {
+            max-width: 50%;
+            text-align: left;
+        }
+
+        .product-info h2 {
+            color: #e8f0dd;
+        }
+
+        .product-info p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .price {
+            font-size: 22px;
+            color: #e8f0dd;
+            margin-bottom: 20px;
+        }
+
+        .buy-button {
+            padding: 10px 20px;
+            background-color: #82a08d;
+            color: #fff;
+            border: 2px solid #1a4850;
+            border-radius: 10px;
+            cursor: pointer;
+            image-rendering: pixelated;
+            font-family: 'VCR OSD Mono', monospace;
+            transition: background-color 0.2s;
+        }
+
+        .buy-button:hover {
+            background-color: #a1c7af;
+        }
+
+        .back-button {
+            padding: 10px 20px;
+            background-color: #82a08d;
+            color: #fff;
+            border: 2px solid #1a4850;
+            border-radius: 10px;
+            cursor: pointer;
+            image-rendering: pixelated;
+            font-family: 'VCR OSD Mono', monospace;
+            transition: background-color 0.2s, color 0.2s;
+        }
+
+        .back-button:hover {
+            background-color: #a1c7af;
+        }
+
+        .window-footer {
+            background-color: #e8f0dd;
+            color: #1a4850;
+            text-align: center;
+            padding: 10px;
+        }
+
+    </style>
+    <script>
+        function navigateToMainShop() {
+            window.location.href = "shop.html";
+        }
+
+        window.onload = function() {
+            document.querySelector('.minimize').addEventListener('click', function() {
+                navigateToMainShop();
+            })
+
+            document.querySelector('.close').addEventListener('click', function() {
+                navigateToMainShop();
+            })
+        }
+    </script>
+</head>
+<body>
+    <div class="game-window">
+        <div class="window-titlebar">
+            <img src="CROKETTE sign.png" alt="crokette shop" class="title-image">
+            <div class="buttons">
+                <button class="minimize">_</button>
+                <button class="maximize">[ ]</button>
+                <button class="close">X</button>
+            </div>
+        </div>
+
+        <div class="window-content">
+            <header>
+                <h1><i>product details</i></h1>
+            </header>
+
+            <div class="product-details">
+                <img src="https://i.pinimg.com/564x/b1/84/1d/b1841d3ce195c4678f7bd40c6def6285.jpg" alt="Gotta Hop!" class="product-image">
+
+                <div class="product-info">
+                    <h2>gotta hop!</h2>
+                    <p>This crochet sweater top shows off it's frog green yarn and a universal yet comforting design. It's perfect for anyone who wants to be both comfortable and fashionable.</p>
+                    <p class="price">$40.00</p>
+                    <button class="buy-button">Buy Now</button>
+                </div>
+            </div>
+<br><br><br>
+            <a href="shop.html" class="back-button">⇠ Back to Shop</a>
+        </div>
+
+        <div class="window-footer">
+            <p>finding comfort in crochet since 2024</p>
+        </div>
+    </div>
+</body>
+</html>
